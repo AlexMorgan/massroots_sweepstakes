@@ -1,0 +1,11 @@
+<%= form_for @applicant do |f| %>
+  <div>
+    <%= f.text_field :fullname, autofocus: true, placeholder: "Full Name" %><br><br>
+  </div>
+  <div>
+    <%= f.text_field :email, placeholder: "Email" %><br><br>
+  </div>
+  <div>
+    <%= f.submit "Enter Now", class: "btn btn-sm btn-success" %>
+  </div>
+<% end %>

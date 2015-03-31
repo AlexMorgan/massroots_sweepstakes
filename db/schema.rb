@@ -17,8 +17,7 @@ ActiveRecord::Schema.define(version: 20150329231804) do
   enable_extension "plpgsql"
 
   create_table "applicants", force: true do |t|
-    t.string   "firstname"
-    t.string   "lastname"
+    t.string   "fullname"
     t.string   "email"
     t.string   "ip_address"
     t.string   "user_agent"

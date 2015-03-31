@@ -1,0 +1,6 @@
+<%= form_for @applicant, :url => create_applicant_path(@applicant) do |f| %>
+  <div class="col-md-12">
+    <%= f.text_field :fullname, autofocus: true, placeholder: "Full Name" %><br><br>
+    <%= f.text_field :email, placeholder: "Email" %><br><br>
+  </div>
+<% end %>
